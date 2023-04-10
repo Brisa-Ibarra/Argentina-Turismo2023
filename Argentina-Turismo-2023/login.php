@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login y Registro - Argentina Turismo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700display=swap" rel ="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container-form sign-up">
+        <div class="welcome-back">
+            <div class="message">
+
+                <h2>Bienvenido a Argentina Turismo</h2>
+                <p>Si ya tienes una cuenta por favor inicia sesion aquí</p>
+                <button class="sign-up-btn">Iniciar Sesión</button>
+            </div>
+        </div>
+        <form  action="php/registro_usuario_be.php" method="POST" class="formulario">
+            <h2 class="create-account">Crear una cuenta</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis"></p>
+            <input type="text" placeholder="Nombre Completo" name="nombre_completo">
+            <input type="text" placeholder="Correo electronico" name="correo">
+            <input type="text" placeholder="Usuario" name="usuario">
+            <input type="password" placeholder="Contraseña" name="password">
+            <button class="registrarse">Registrarse</button>
+        </form>
+    </div>
+
+    <div class="container-form sign-in">
+        <form class="formulario">
+            <h2 class="create-account">Iniciar Sesión</h2>
+            <div class="iconos">
+                <div class="border-icon">
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-linkedin'></i>
+                </div>
+                <div class="border-icon">
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+            </div>
+            <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
+            <input type="text" placeholder="Correo electronico">
+            <input type="password" placeholder="Contraseña">
+            <input type="button" value="Iniciar Sesión">
+        </form>
+        <div class="welcome-back">
+            <div class="message">
+
+                <h2>Bienvenido de nuevo</h2>
+                <p>Si aun no tienes una cuenta por favor registrese aquí</p>
+                <button class="sign-in-btn">Registrarse</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
