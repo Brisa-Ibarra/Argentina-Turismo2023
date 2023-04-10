@@ -128,6 +128,19 @@ body {
     cursor: pointer;
     color: #222;
 }
+.formulario .inicio{
+    width: 60%;
+    margin: auto;
+    border: solid thin white;
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: white;
+    font-weight: 600;
+    margin-top: 2rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: #222;
+}
 
 .sign-in {
     position: absolute;
