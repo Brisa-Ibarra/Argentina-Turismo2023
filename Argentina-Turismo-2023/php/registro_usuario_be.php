@@ -2,11 +2,12 @@
 
 	include 'conexion_be.php';
 
+
 	$nombre_completo = $_POST['nombre_completo'];
 	$correo = $_POST['correo'];
 	$usuario = $_POST['usuario'];
 	$password = $_POST['password'];
-	
+
 
 	$query = "INSERT INTO usuarios(nombre_completo, correo, usuario, password) 
 			  VALUES('$nombre_completo', '$correo', '$usuario', '$password')";
@@ -18,7 +19,7 @@
 		echo '
 			<script>
 				alert("Este correo ya está registrado, intenta con otro diferente");
-				window.location = "../login.php"
+				window.location = "../login.html"
 			</script>
 		';
 		exit();
@@ -31,13 +32,13 @@
 		echo '
 			<script>
 				alert("Este usuario ya está registrado, intenta con otro diferente");
-				window.location = "../login.php"
+				window.location = "../login.html"
 			</script>
 		';
 		exit();
 	}
 
-
+		
 	$ejecutar = mysqli_query($conexion, $query);
 
 	if($ejecutar){
@@ -45,7 +46,7 @@
 
 			<script>
 				alert("Usuario registrado exitosamente");
-				window.location = "../login.php";
+				window.location = "../login.html";
 			</script>
 		';
 	}else {
@@ -53,7 +54,7 @@
 
 			<script>
 				alert("Intentalo de nuevo, usuario no registrado");
-				window.location = "../login.php";
+				window.location = "../login.html";
 			</script>
 		';
 	}

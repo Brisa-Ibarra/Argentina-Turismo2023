@@ -2,6 +2,8 @@
 
 	include 'conexion_be.php';
 
+	session_start();
+
 	$correo = $_POST['correo'];
 	$password = $_POST['password'];
 
@@ -12,16 +14,17 @@
 	$filas = mysqli_num_rows($ejecutar);
 
 	if($filas > 0){
+		$_SESSION['correo'] = $correo;
 		echo '
 			<script>
-				window.location = "../home.php";
+				window.location = "../home.html";
 			</script>
 		';
 	}else {
 		echo '
 			<script>
 				alert("Error de AUTENTICACION");
-				window.location = "../login.php";
+				window.location = "../login.html";
 			</script>
 		';
 	}

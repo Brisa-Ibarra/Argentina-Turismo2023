@@ -91,6 +91,11 @@ body {
     transition: all .3s ease-in;
 }
 
+.iconos .border-icon a i {
+    color: #fff;
+}
+
+
 .border-icon:hover {
     background-color: #4a4aee;
     cursor: pointer;
@@ -128,6 +133,7 @@ body {
     cursor: pointer;
     color: #222;
 }
+
 .formulario .inicio{
     width: 60%;
     margin: auto;
